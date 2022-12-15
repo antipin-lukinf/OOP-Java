@@ -13,10 +13,15 @@ public class L1 {
         tovary.add(water);
         tovary.add(new Product("vine", 12));
         tovary.add(new Product("dust", 10));
+        tovary.add(new Soda("kind", 13, "grapes"));
 
 
         VendingMachine mach2 = new VendingMachine(tovary);
         System.out.println(mach2);
+        
+        System.out.println(mach2.findByName("vine")); // поиск элемента
+        System.out.println(mach2.findByPrice(12));
+        System.out.println(mach2.findByPriceRange(9,13));
 
     }
     
