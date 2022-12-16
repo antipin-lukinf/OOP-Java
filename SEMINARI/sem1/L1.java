@@ -1,9 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-// На основе кода с урока добавить еще один класс продукта, 
-// (Молоко, шоколад ,и т.п., можно добавить несколько классов),
-//  они должны наследоваться от класса Product, надо переопределить метод toString и 
-// попробовать включить эти классы в VendingMachine, вывести список товаров из VendingMachine
 
 public class L1 {
     public static void main(String[] args) {
@@ -18,6 +14,7 @@ public class L1 {
         tovary.add(new Product("vine", 12));
         tovary.add(new Product("dust", 10));
         tovary.add(new Soda("kind", 13, "grapes"));
+        tovary.add(new Ice("milka", 23, "chocolate"));
 
 
         VendingMachine mach2 = new VendingMachine(tovary);
@@ -26,6 +23,9 @@ public class L1 {
         System.out.println(mach2.findByName("vine")); // поиск элемента
         System.out.println(mach2.findByPrice(12));
         System.out.println(mach2.findByPriceRange(9,13));
+
+        VendingMachine mach3 = new VendingMachine(tovary);
+        System.out.println(mach3);
 
     }
     
