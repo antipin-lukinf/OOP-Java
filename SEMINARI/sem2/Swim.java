@@ -1,31 +1,32 @@
 package SEMINARI.sem2;
 
-public class Swim extends Animal implements Speakeble{
+public class Swim extends Animal implements Speakeble, SwimSpeed{
 
-    public Swim(String nickname, String owner, int legs, float speed) {
+    public Swim(String nickname, String owner, int legs) {
         super(nickname, owner, legs);
-        this.setSpeed(speed);
-
     }
-    private void setSpeed(float speed2) {
-    }
-    //private void setSwim(float speed2) {
-    //}
-    private Float speed;
 
     @Override
     public String speak() {
         // TODO Auto-generated method stub
-        return "BulBul";
+        return "bolBol";
     }
 
-    public float getSpeed() {
-        return speed;
+    @Override
+    public Integer swimSpeed() {
+        // TODO Auto-generated method stub
+        return 18;
     }
-
-    // public String toString(){
-    //     return String.format("%s - %s - %i - %f", super.toString(), speed);
-    // }
+    @Override
+    
+    public String toString() {
+        // TODO Auto-generated method stub
+        return "Kit" + super.toString();
+    }
 
     
+
+   
+
+   
 }

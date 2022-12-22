@@ -1,0 +1,4 @@
+Cat[nickname=Pashka, owner=Andrey, legs=4]
+Dog[nickname=Sharik, owner=Andrey, legs=4]
+Duck[nickname=Donald, owner=Bill, legs=2]
+Eagle[nickname=Grud, owner=Ivan, legs=2]

@@ -30,7 +30,7 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return "Animal [nickname=" + nickname + ", owner=" + owner + ", legs=" + legs + "]";
+        return "[nickname=" + nickname +  ", owner=" + owner + ", legs=" + legs + "]";
     }
 
     //public abstract String speak();
