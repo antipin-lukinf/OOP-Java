@@ -9,8 +9,8 @@ public class Main {
         zoo.addAminal(new Cat("Pashka", "Andrey", 4))
             .addAminal(new Dog("Sharik", "Andrey", 4))
             .addAminal(new Duck("Donald", "Bill", 2))
-            .addAminal(new Eagle("Grud", "Ivan", 2));
-            // .addAnimal(new Swim("Kit", "Bob", 0));
+            .addAminal(new Eagle("Grud", "Ivan", 2))
+            .addAminal(new Swim("Kit", "Bob", 0));
         System.out.println(zoo.toString());
         System.out.println(zoo.talk());
 

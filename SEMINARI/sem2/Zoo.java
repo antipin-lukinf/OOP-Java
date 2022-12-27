@@ -45,7 +45,7 @@ public class Zoo {
     public List<Runable> getRunables(){
         List<Runable> result = new ArrayList<>();
         for(Animal item:animals){
-            if(item instanceof Runable);{
+            if(item instanceof Runable){
                 result.add((Runable) item);
             }
         }
