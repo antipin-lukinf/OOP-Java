@@ -3,7 +3,7 @@ package SEMINARI.DZ3;
 import java.util.Arrays;
 import java.util.Iterator;
 
-public class MyLinkedList implements DescendingIterator{
+public class MyLinkedList implements Iterable<Integer>{
     private Node head;
     private int size;
 
@@ -61,7 +61,35 @@ public class MyLinkedList implements DescendingIterator{
             temp = temp.getNext();
         }
         return Arrays.toString(result);
+      
     }
+    @Override    
+    public Iterator<Integer> iterator() {
+        return new LinkedIterator();
+    }
+    private class LinkedIterator implements Iterator<Integer> {
+
+        private int index = 0; 
+        private Node node = head;
+        
+        @Override
+        public boolean hasNext() {
+            return index < size;
+        }
+
+        @Override
+        public Integer next() {
+            if (index==0 || node.getNext() == null) {
+                index++;
+                return node.getValue();
+            }
+            node = node.getNext();
+            index++;
+            return node.getValue();
+        }
+    }
+
+    
 
     private static class Node {
         

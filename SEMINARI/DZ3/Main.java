@@ -11,6 +11,7 @@ public class Main {
         myLinkedList.add(1);
         myLinkedList.add(2);
         myLinkedList.add(10);
+        Iterator iterator= myLinkedList.iterator();
 
         System.out.println(myLinkedList);
 
@@ -19,14 +20,12 @@ public class Main {
 
         System.out.println("_______________");
 
-        Iterator iterator = myLinkedList.descendingIteratror();
+        myLinkedList = new MyLinkedList();
+        
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
-
         
-        
-
-        
+        }
     }
-    
+
 }
